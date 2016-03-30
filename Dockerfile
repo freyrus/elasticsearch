@@ -43,7 +43,7 @@ RUN set -ex \
 	done
 
 COPY config ./config
-COPY config ./configs
+COPY configs ./configs
 
 RUN ln -s /usr/share/elasticsearch/configs/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
