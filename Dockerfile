@@ -44,6 +44,7 @@ RUN set -ex \
 
 COPY config ./config
 COPY configs ./configs
+RUN chown -R elasticsearch:elasticsearch ./configs
 
 RUN ln -s /usr/share/elasticsearch/configs/elasticsearch.yml /usr/share/elasticsearch/config/elasticsearch.yml
 
